@@ -7,6 +7,12 @@
   <a href="./README_cn.md">English</a>
 </p>
 
+<div align="center">
+  <br>
+  <img src="https://github.com/umi-AIGC-saas/umi_ai_cms_pay/blob/main/assets/v1.png" alt="platform multimodal">
+</div>
+
+
 **体验地址**：[https://ai.umi6.com](https://ai.umi6.com)
 
 ## 一、环境准备  
@@ -33,7 +39,7 @@
 releases! 🌟
 
 <div align="center" style="margin-top:20px;margin-bottom:20px;">
-<img src="https://github.com/UMIntelligence/platform_multimodal_frontend/blob/main/assets/3ed4e296-fbf2-4618-9011-8eca26fe3462.gif" width="1200"/>
+<img src="https://github.com/umi-AIGC-saas/umi_ai_cms_pay/blob/main/assets/v1.gif" width="1200"/>
 </div>
 
 
