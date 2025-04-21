@@ -1,0 +1,39 @@
+app:
+  config:
+    id: 'ai-agent'
+    log_level: 'WARNING'
+    collect_metrics: true
+    name: 'ai-agent'
+
+llm:
+  provider: openai
+  config:
+    model: 'gpt-4'
+    temperature: 0.5
+    max_tokens: 1000
+    top_p: 1
+    stream: false
+
+vectordb:
+  provider: opensearch
+  config:
+    # TODO 你的向量数据库地址
+    opensearch_url: 'https://your_db_url:9200'
+    http_auth:
+      - admin
+      - admin
+    vector_dimension: 1536
+    collection_name: 'ai-agent'
+    use_ssl: false
+    verify_certs: false
+
+embedder:
+  provider: openai
+  config:
+    model: 'text-embedding-ada-002'
+#    deployment_name: 'my-app'
+
+#embedder:
+#  provider: huggingface
+#  config:
+#    model: 'moka-ai/m3e-large'

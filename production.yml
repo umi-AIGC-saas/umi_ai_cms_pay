@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  server_pay_umi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: server_pay_umi:v8.9
+    container_name: server_pay_umi
+    ports:
+      - "28082:8888"
+    command: ./start_umi
+    depends_on:
+      - dnsmasq
+    networks:
+      - default
+    environment:
+      - DNS_SERVER=dnsmasq
+
+  dnsmasq:
+    image: 4km3/dnsmasq:2.85-r2
+    container_name: dnsmasq
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+    volumes:
+      - ./dnsmasq.conf:/etc/dnsmasq.conf
+    restart: unless-stopped
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+
+# shellcheck disable=SC2046
+gunicorn server_pay.asgi:application -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8888 --workers=$(python -c 'import multiprocessing; print(multiprocessing.cpu_count() * 3 + 1)')
