@@ -33,15 +33,6 @@
 - **依赖工具**：确保已安装`pip`、`setuptools`、`wheel`  
 
 
-## 🎉 Stay Tuned
-
-⭐️ Star our repository to stay up-to-date with exciting new features and improvements! Get instant notifications for new
-releases! 🌟
-
-<div align="center" style="margin-top:20px;margin-bottom:20px;">
-<img src="https://github.com/umi-AIGC-saas/umi_ai_cms_pay/blob/main/assets/v1.gif" width="1200"/>
-</div>
-
 
 
 ### 3. 端口配置  
@@ -125,6 +116,17 @@ docker logs -f $CONTAINER_ID
 ```bash
 curl http://localhost:29090/healthz  # 应返回{"status":"healthy"}
 ```
+
+## 🎉 Stay Tuned
+
+⭐️ Star our repository to stay up-to-date with exciting new features and improvements! Get instant notifications for new
+releases! 🌟
+
+<div align="center" style="margin-top:20px;margin-bottom:20px;">
+<img src="https://github.com/umi-AIGC-saas/umi_ai_cms_pay/blob/main/assets/v1.gif" width="1200"/>
+</div>
+
+
 
 
 ## 模块导航

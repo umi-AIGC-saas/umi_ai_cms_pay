@@ -30,13 +30,6 @@ This module is related to the Pay function of the content management system.
   ```
 - **Dependent Tools**: Ensure that `pip`, `setuptools`, and `wheel` are installed.
 
-## 🎉 Stay Tuned
-
-⭐️ Star our repository to stay up - to - date with exciting new features and improvements! Get instant notifications for new releases! 🌟
-
-<div align="center" style="margin-top:20px;margin-bottom:20px;">
-<img src="https://github.com/umi-AIGC-saas/umi_ai_cms_pay/blob/main/assets/v1.gif" width="1200"/>
-</div>
 
 ### 3. Port Configuration
 You need to release the following ports in advance (the operations may vary depending on the system):
@@ -112,6 +105,15 @@ docker logs -f $CONTAINER_ID
 ```bash
 curl http://localhost:29090/healthz  # {"status":"healthy"} should be returned
 ```
+
+## 🎉 Stay Tuned
+
+⭐️ Star our repository to stay up - to - date with exciting new features and improvements! Get instant notifications for new releases! 🌟
+
+<div align="center" style="margin-top:20px;margin-bottom:20px;">
+<img src="https://github.com/umi-AIGC-saas/umi_ai_cms_pay/blob/main/assets/v1.gif" width="1200"/>
+</div>
+
 
 ## Module Navigation
 
